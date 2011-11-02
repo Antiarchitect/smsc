@@ -5,11 +5,11 @@ require "smsc/version"
 Gem::Specification.new do |s|
   s.name        = "smsc"
   s.version     = Smsc::VERSION
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Andrey Voronkov"]
+  s.email       = ["voronkovaa@gmail.com"]
+  s.homepage    = "http://github.com/Antiarchitect/smsc"
+  s.summary     = %q{Simple client for sending SMS via smsc.ru}
+  s.description = %q{Simple client for sending SMS via smsc.ru}
 
   s.rubyforge_project = "smsc"
 
@@ -21,4 +21,5 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+  s.add_dependency "httparty", "~> 0.8.1"
 end
