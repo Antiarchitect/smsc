@@ -14,7 +14,6 @@ module Smsc
     end
 
     def message(message, phones)
-      message = message
       phones = phones.join(",")
       Smsc::Sender.post('https://smsc.ru/sys/send.php', :query => { :login => login, :psw => password, :phones => phones, :mes => message, :charset => charset })
     end
