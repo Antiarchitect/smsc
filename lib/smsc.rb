@@ -1,3 +1,4 @@
+require 'digest/md5'
 require 'httparty'
 
 require "smsc/sender"
@@ -9,7 +10,7 @@ module Smsc
 
     def initialize(login, password, charset = 'utf-8')
       @login = login
-      @password = password
+      @password = Digest::MD5.hexdigest(password.to_s)
       @charset = charset
     end
 
