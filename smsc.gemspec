@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  s.add_dependency "httparty", "~> 0.9.0"
+  s.add_dependency 'faraday', '~> 0.8.6'
 end
