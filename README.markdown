@@ -20,5 +20,5 @@ Sending sms:
 
 ~~~~ ruby
 sms = Smsc::Sms.new('login', 'password', 'windows-1251')           # encoding is optional - utf-8 by default
-sms.message('Some nice message', ['+11111234567', '+12221234567'])
+sms.message('Some nice message', ['+11111234567', '+12221234567'], sender: "custom sender id") # sender is optional
 ~~~~~
