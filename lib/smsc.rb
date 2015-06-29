@@ -23,7 +23,7 @@ module Smsc
         mes: message,
         charset: @charset
       }
-      params = .reverse_merge!(options)
+      params.reverse_merge!(options)
 
       @connection.post '/sys/send.php', params
     end
