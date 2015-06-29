@@ -21,9 +21,9 @@ module Smsc
         psw: @password,
         phones: phones.join(','),
         mes: message,
-        charset: @charset,
-        sender: options[:sender]
+        charset: @charset
       }
+      params.reverse_merge!(options)
 
       @connection.post '/sys/send.php', params
     end
